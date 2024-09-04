@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bpqxrnwsv3nbx"
+path="res://.godot/imported/jump.ogg-791d2ed227695c1baf8b731a61d13251.oggvorbisstr"
+
+[deps]
+
+source_file="res://Art/DIamond Land Assets/Sound/jump.ogg"
+dest_files=["res://.godot/imported/jump.ogg-791d2ed227695c1baf8b731a61d13251.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

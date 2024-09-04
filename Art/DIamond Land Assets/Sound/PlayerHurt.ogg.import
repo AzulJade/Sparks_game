@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c8mxn07fuorou"
+path="res://.godot/imported/PlayerHurt.ogg-5dfe64f0deb2c452709388abfc803558.oggvorbisstr"
+
+[deps]
+
+source_file="res://Art/DIamond Land Assets/Sound/PlayerHurt.ogg"
+dest_files=["res://.godot/imported/PlayerHurt.ogg-5dfe64f0deb2c452709388abfc803558.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -137,9 +137,11 @@ animation = &"Idle"
 [sub_resource type="AnimationNodeTransition" id="AnimationNodeTransition_3m1mc"]
 input_0/name = "not_dashing"
 input_0/auto_advance = false
+input_0/break_loop_at_end = false
 input_0/reset = true
 input_1/name = "Is_dashing"
 input_1/auto_advance = false
+input_1/break_loop_at_end = false
 input_1/reset = true
 
 [sub_resource type="AnimationNodeOneShot" id="AnimationNodeOneShot_6ysqr"]
@@ -147,17 +149,21 @@ input_1/reset = true
 [sub_resource type="AnimationNodeTransition" id="AnimationNodeTransition_kob18"]
 input_0/name = "Idle"
 input_0/auto_advance = false
+input_0/break_loop_at_end = false
 input_0/reset = true
 input_1/name = "Running"
 input_1/auto_advance = false
+input_1/break_loop_at_end = false
 input_1/reset = true
 
 [sub_resource type="AnimationNodeTransition" id="AnimationNodeTransition_43lfv"]
 input_0/name = "Grounded"
 input_0/auto_advance = false
+input_0/break_loop_at_end = false
 input_0/reset = true
 input_1/name = "Not_grounded"
 input_1/auto_advance = false
+input_1/break_loop_at_end = false
 input_1/reset = true
 
 [sub_resource type="AnimationNodeBlendTree" id="AnimationNodeBlendTree_tj65h"]
@@ -181,7 +187,7 @@ nodes/Movement/position = Vector2(-20, 140)
 nodes/On_floor/node = SubResource("AnimationNodeTransition_43lfv")
 nodes/On_floor/position = Vector2(240, 220)
 nodes/output/position = Vector2(880, 130)
-node_connections = [&"output", 0, &"Dash_state", &"Dash_state", 0, &"On_floor", &"Dash_state", 1, &"Animation 5", &"Jump", 0, &"Animation 4", &"Jump", 1, &"Animation 3", &"Movement", 0, &"Animation", &"Movement", 1, &"Animation 2", &"On_floor", 0, &"Movement", &"On_floor", 1, &"Jump"]
+node_connections = [&"Dash_state", 0, &"On_floor", &"Dash_state", 1, &"Animation 5", &"Jump", 0, &"Animation 4", &"Jump", 1, &"Animation 3", &"Movement", 0, &"Animation", &"Movement", 1, &"Animation 2", &"On_floor", 0, &"Movement", &"On_floor", 1, &"Jump", &"output", 0, &"Dash_state"]
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 3
@@ -224,7 +230,6 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeBlendTree_tj65h")
 anim_player = NodePath("../AnimationPlayer")
-active = true
 parameters/Dash_state/current_state = "not_dashing"
 parameters/Dash_state/transition_request = ""
 parameters/Dash_state/current_index = 0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cyl3rnky8yktm"
+path="res://.godot/imported/firm-walking.wav-def2765586d389dadf8d8c31ec1be1d7.sample"
+
+[deps]
+
+source_file="res://Art/DIamond Land Assets/Sound/Music/HappyLoops/firm-walking.wav"
+dest_files=["res://.godot/imported/firm-walking.wav-def2765586d389dadf8d8c31ec1be1d7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

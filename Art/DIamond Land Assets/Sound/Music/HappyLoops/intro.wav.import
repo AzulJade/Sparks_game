@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://deyb4xkc6vvko"
+path="res://.godot/imported/intro.wav-c8bd43edd66c87e212cd662f95fee877.sample"
+
+[deps]
+
+source_file="res://Art/DIamond Land Assets/Sound/Music/HappyLoops/intro.wav"
+dest_files=["res://.godot/imported/intro.wav-c8bd43edd66c87e212cd662f95fee877.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

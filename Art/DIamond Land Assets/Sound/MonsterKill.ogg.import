@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bwulr7vr5hna7"
+path="res://.godot/imported/MonsterKill.ogg-5a9132b876acf2f909fb8a4e3e674daf.oggvorbisstr"
+
+[deps]
+
+source_file="res://Art/DIamond Land Assets/Sound/MonsterKill.ogg"
+dest_files=["res://.godot/imported/MonsterKill.ogg-5a9132b876acf2f909fb8a4e3e674daf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
