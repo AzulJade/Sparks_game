@@ -1,0 +1,227 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsiq3cwflmdt6"]
+
+[ext_resource type="Script" path="res://Scences/Camera_manager.gd" id="1_gh8r1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ytns"]
+size = Vector2(480, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w4qc2"]
+size = Vector2(560, 320)
+
+[node name="Camera_manager" type="Node2D"]
+script = ExtResource("1_gh8r1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(469, -45)
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(447, -6)
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(-159, -60)
+shape = SubResource("RectangleShape2D_w4qc2")
+
+[node name="Marker2D2" type="Marker2D" parent="Area2D2"]
+position = Vector2(27, 12)
+gizmo_extents = 20.0
+
+[node name="Area2D3" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D3"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D4" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D4"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D5" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D5"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D6" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D6"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D7" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D7"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D7"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D8" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D8"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D9" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D9"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D9"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D10" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D10"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D10"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D11" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D11"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D11"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D12" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D12"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D12"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D13" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D13"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D13"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D14" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D14"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D14"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[node name="Area2D15" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D15"]
+position = Vector2(-225, -46)
+shape = SubResource("RectangleShape2D_1ytns")
+
+[node name="Marker2D" type="Marker2D" parent="Area2D15"]
+position = Vector2(-223, -43)
+gizmo_extents = 20.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]
+[connection signal="body_entered" from="Area2D3" to="." method="_on_area_2d_3_body_entered"]
+[connection signal="body_entered" from="Area2D4" to="." method="_on_area_2d_4_body_entered"]
+[connection signal="body_entered" from="Area2D5" to="." method="_on_area_2d_5_body_entered"]
+[connection signal="body_entered" from="Area2D6" to="." method="_on_area_2d_6_body_entered"]
+[connection signal="body_entered" from="Area2D7" to="." method="_on_area_2d_7_body_entered"]
+[connection signal="body_entered" from="Area2D8" to="." method="_on_area_2d_8_body_entered"]
+[connection signal="body_entered" from="Area2D9" to="." method="_on_area_2d_9_body_entered"]
+[connection signal="body_entered" from="Area2D10" to="." method="_on_area_2d_10_body_entered"]
+[connection signal="body_entered" from="Area2D11" to="." method="_on_area_2d_11_body_entered"]
+[connection signal="body_entered" from="Area2D12" to="." method="_on_area_2d_12_body_entered"]
+[connection signal="body_entered" from="Area2D13" to="." method="_on_area_2d_13_body_entered"]
+[connection signal="body_entered" from="Area2D14" to="." method="_on_area_2d_14_body_entered"]
+[connection signal="body_entered" from="Area2D15" to="." method="_on_area_2d_15_body_entered"]

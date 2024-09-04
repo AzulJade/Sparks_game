@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0bug2avgguje"]
+
+[ext_resource type="Script" path="res://Code/Moving_platform.gd" id="1_481cb"]
+[ext_resource type="Texture2D" uid="uid://83l0odawk38l" path="res://Art/DIamond Land Assets/Atlas/Atlas_Props.png" id="1_y3mom"]
+
+[sub_resource type="Curve2D" id="Curve2D_dphjw"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 288, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 7
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rngqt"]
+size = Vector2(32, 32)
+
+[node name="Moving_platform" type="Node2D"]
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_dphjw")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+rotates = false
+
+[node name="Platoform" type="CharacterBody2D" parent="Path2D/PathFollow2D"]
+motion_mode = 1
+wall_min_slide_angle = 3.14159
+floor_stop_on_slope = false
+floor_constant_speed = true
+floor_snap_length = 32.0
+script = ExtResource("1_481cb")
+speed = 150
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Platoform"]
+texture = ExtResource("1_y3mom")
+region_enabled = true
+region_rect = Rect2(272, 336, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Platoform"]
+shape = SubResource("RectangleShape2D_rngqt")

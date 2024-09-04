@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://buh3mf2c24lc2"]
+
+[ext_resource type="Script" path="res://Scences/diamond.gd" id="1_16dqc"]
+[ext_resource type="Texture2D" uid="uid://83l0odawk38l" path="res://Art/DIamond Land Assets/Atlas/Atlas_Props.png" id="1_aydau"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dxouw"]
+radius = 16.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ksrhq"]
+size = Vector2(10, 10)
+
+[node name="Diamond" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_16dqc")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+shape = SubResource("CircleShape2D_dxouw")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/Area2D"]
+texture = ExtResource("1_aydau")
+region_enabled = true
+region_rect = Rect2(224, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_ksrhq")
+disabled = true
+
+[connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
